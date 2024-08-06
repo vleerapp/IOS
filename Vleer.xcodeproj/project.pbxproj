@@ -9,41 +9,18 @@
 /* Begin PBXBuildFile section */
 		1545A6482C62431E004B2DD7 /* VleerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545A6472C62431E004B2DD7 /* VleerApp.swift */; };
 		1545A64A2C62431E004B2DD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545A6492C62431E004B2DD7 /* ContentView.swift */; };
-		1545A64C2C62431F004B2DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1545A64B2C62431F004B2DD7 /* Assets.xcassets */; };
 		1545A64F2C62431F004B2DD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1545A64E2C62431F004B2DD7 /* Preview Assets.xcassets */; };
-		1545A6592C62431F004B2DD7 /* VleerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545A6582C62431F004B2DD7 /* VleerTests.swift */; };
-		1545A6632C62431F004B2DD7 /* VleerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545A6622C62431F004B2DD7 /* VleerUITests.swift */; };
-		1545A6652C62431F004B2DD7 /* VleerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545A6642C62431F004B2DD7 /* VleerUITestsLaunchTests.swift */; };
+		1588FD6C2C62B7FA002DF1D8 /* ModernAVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 1588FD6B2C62B7FA002DF1D8 /* ModernAVPlayer */; };
+		1588FD6E2C62B7FA002DF1D8 /* RxModernAVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 1588FD6D2C62B7FA002DF1D8 /* RxModernAVPlayer */; };
+		1588FD742C62BDBC002DF1D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1588FD732C62BDBC002DF1D8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1545A6552C62431F004B2DD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1545A63C2C62431E004B2DD7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1545A6432C62431E004B2DD7;
-			remoteInfo = Vleer;
-		};
-		1545A65F2C62431F004B2DD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1545A63C2C62431E004B2DD7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1545A6432C62431E004B2DD7;
-			remoteInfo = Vleer;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1545A6442C62431E004B2DD7 /* Vleer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vleer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1545A6472C62431E004B2DD7 /* VleerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VleerApp.swift; sourceTree = "<group>"; };
 		1545A6492C62431E004B2DD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1545A64B2C62431F004B2DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1545A64E2C62431F004B2DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1545A6542C62431F004B2DD7 /* VleerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VleerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1545A6582C62431F004B2DD7 /* VleerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VleerTests.swift; sourceTree = "<group>"; };
-		1545A65E2C62431F004B2DD7 /* VleerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VleerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1545A6622C62431F004B2DD7 /* VleerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VleerUITests.swift; sourceTree = "<group>"; };
-		1545A6642C62431F004B2DD7 /* VleerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VleerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1588FD732C62BDBC002DF1D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1545A6512C62431F004B2DD7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1545A65B2C62431F004B2DD7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1588FD6C2C62B7FA002DF1D8 /* ModernAVPlayer in Frameworks */,
+				1588FD6E2C62B7FA002DF1D8 /* RxModernAVPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				1545A6462C62431E004B2DD7 /* Vleer */,
-				1545A6572C62431F004B2DD7 /* VleerTests */,
-				1545A6612C62431F004B2DD7 /* VleerUITests */,
 				1545A6452C62431E004B2DD7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				1545A6442C62431E004B2DD7 /* Vleer.app */,
-				1545A6542C62431F004B2DD7 /* VleerTests.xctest */,
-				1545A65E2C62431F004B2DD7 /* VleerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +55,9 @@
 		1545A6462C62431E004B2DD7 /* Vleer */ = {
 			isa = PBXGroup;
 			children = (
+				1588FD732C62BDBC002DF1D8 /* Assets.xcassets */,
 				1545A6472C62431E004B2DD7 /* VleerApp.swift */,
 				1545A6492C62431E004B2DD7 /* ContentView.swift */,
-				1545A64B2C62431F004B2DD7 /* Assets.xcassets */,
 				1545A64D2C62431F004B2DD7 /* Preview Content */,
 			);
 			path = Vleer;
@@ -108,23 +69,6 @@
 				1545A64E2C62431F004B2DD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1545A6572C62431F004B2DD7 /* VleerTests */ = {
-			isa = PBXGroup;
-			children = (
-				1545A6582C62431F004B2DD7 /* VleerTests.swift */,
-			);
-			path = VleerTests;
-			sourceTree = "<group>";
-		};
-		1545A6612C62431F004B2DD7 /* VleerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1545A6622C62431F004B2DD7 /* VleerUITests.swift */,
-				1545A6642C62431F004B2DD7 /* VleerUITestsLaunchTests.swift */,
-			);
-			path = VleerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,45 +87,13 @@
 			dependencies = (
 			);
 			name = Vleer;
+			packageProductDependencies = (
+				1588FD6B2C62B7FA002DF1D8 /* ModernAVPlayer */,
+				1588FD6D2C62B7FA002DF1D8 /* RxModernAVPlayer */,
+			);
 			productName = Vleer;
 			productReference = 1545A6442C62431E004B2DD7 /* Vleer.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1545A6532C62431F004B2DD7 /* VleerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1545A66B2C62431F004B2DD7 /* Build configuration list for PBXNativeTarget "VleerTests" */;
-			buildPhases = (
-				1545A6502C62431F004B2DD7 /* Sources */,
-				1545A6512C62431F004B2DD7 /* Frameworks */,
-				1545A6522C62431F004B2DD7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1545A6562C62431F004B2DD7 /* PBXTargetDependency */,
-			);
-			name = VleerTests;
-			productName = VleerTests;
-			productReference = 1545A6542C62431F004B2DD7 /* VleerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1545A65D2C62431F004B2DD7 /* VleerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1545A66E2C62431F004B2DD7 /* Build configuration list for PBXNativeTarget "VleerUITests" */;
-			buildPhases = (
-				1545A65A2C62431F004B2DD7 /* Sources */,
-				1545A65B2C62431F004B2DD7 /* Frameworks */,
-				1545A65C2C62431F004B2DD7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1545A6602C62431F004B2DD7 /* PBXTargetDependency */,
-			);
-			name = VleerUITests;
-			productName = VleerUITests;
-			productReference = 1545A65E2C62431F004B2DD7 /* VleerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,14 +108,6 @@
 					1545A6432C62431E004B2DD7 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					1545A6532C62431F004B2DD7 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 1545A6432C62431E004B2DD7;
-					};
-					1545A65D2C62431F004B2DD7 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 1545A6432C62431E004B2DD7;
-					};
 				};
 			};
 			buildConfigurationList = 1545A63F2C62431E004B2DD7 /* Build configuration list for PBXProject "Vleer" */;
@@ -215,13 +119,14 @@
 				Base,
 			);
 			mainGroup = 1545A63B2C62431E004B2DD7;
+			packageReferences = (
+				1588FD6A2C62B7FA002DF1D8 /* XCRemoteSwiftPackageReference "ModernAVPlayer" */,
+			);
 			productRefGroup = 1545A6452C62431E004B2DD7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1545A6432C62431E004B2DD7 /* Vleer */,
-				1545A6532C62431F004B2DD7 /* VleerTests */,
-				1545A65D2C62431F004B2DD7 /* VleerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,22 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1588FD742C62BDBC002DF1D8 /* Assets.xcassets in Resources */,
 				1545A64F2C62431F004B2DD7 /* Preview Assets.xcassets in Resources */,
-				1545A64C2C62431F004B2DD7 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1545A6522C62431F004B2DD7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1545A65C2C62431F004B2DD7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,37 +153,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1545A6502C62431F004B2DD7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1545A6592C62431F004B2DD7 /* VleerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1545A65A2C62431F004B2DD7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1545A6632C62431F004B2DD7 /* VleerUITests.swift in Sources */,
-				1545A6652C62431F004B2DD7 /* VleerUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1545A6562C62431F004B2DD7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1545A6432C62431E004B2DD7 /* Vleer */;
-			targetProxy = 1545A6552C62431F004B2DD7 /* PBXContainerItemProxy */;
-		};
-		1545A6602C62431F004B2DD7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1545A6432C62431E004B2DD7 /* Vleer */;
-			targetProxy = 1545A65F2C62431F004B2DD7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1545A6662C62431F004B2DD7 /* Debug */ = {
@@ -422,13 +283,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vleer/Preview Content\"";
+				DEVELOPMENT_TEAM = MQ75RNKTQD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Vleer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Vleer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,9 +302,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.vleer.Vleer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,13 +320,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Vleer/Preview Content\"";
+				DEVELOPMENT_TEAM = MQ75RNKTQD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Vleer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Vleer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,81 +339,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.vleer.Vleer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		1545A66C2C62431F004B2DD7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.vleer.VleerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vleer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vleer";
-			};
-			name = Debug;
-		};
-		1545A66D2C62431F004B2DD7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.vleer.VleerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vleer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vleer";
-			};
-			name = Release;
-		};
-		1545A66F2C62431F004B2DD7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.vleer.VleerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Vleer;
-			};
-			name = Debug;
-		};
-		1545A6702C62431F004B2DD7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.vleer.VleerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Vleer;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -563,25 +370,31 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1545A66B2C62431F004B2DD7 /* Build configuration list for PBXNativeTarget "VleerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1545A66C2C62431F004B2DD7 /* Debug */,
-				1545A66D2C62431F004B2DD7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1545A66E2C62431F004B2DD7 /* Build configuration list for PBXNativeTarget "VleerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1545A66F2C62431F004B2DD7 /* Debug */,
-				1545A6702C62431F004B2DD7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1588FD6A2C62B7FA002DF1D8 /* XCRemoteSwiftPackageReference "ModernAVPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/noreasonprojects/ModernAVPlayer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1588FD6B2C62B7FA002DF1D8 /* ModernAVPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1588FD6A2C62B7FA002DF1D8 /* XCRemoteSwiftPackageReference "ModernAVPlayer" */;
+			productName = ModernAVPlayer;
+		};
+		1588FD6D2C62B7FA002DF1D8 /* RxModernAVPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1588FD6A2C62B7FA002DF1D8 /* XCRemoteSwiftPackageReference "ModernAVPlayer" */;
+			productName = RxModernAVPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1545A63C2C62431E004B2DD7 /* Project object */;
 }
