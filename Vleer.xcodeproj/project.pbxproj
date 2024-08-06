@@ -11,6 +11,7 @@
 		1545A64A2C62431E004B2DD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1545A6492C62431E004B2DD7 /* ContentView.swift */; };
 		1545A64F2C62431F004B2DD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1545A64E2C62431F004B2DD7 /* Preview Assets.xcassets */; };
 		15682C6F2C62C5AA00627168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15682C6E2C62C5AA00627168 /* Assets.xcassets */; };
+		15682C712C62C89800627168 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15682C702C62C89800627168 /* Download.swift */; };
 		1588FD6C2C62B7FA002DF1D8 /* ModernAVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 1588FD6B2C62B7FA002DF1D8 /* ModernAVPlayer */; };
 		1588FD6E2C62B7FA002DF1D8 /* RxModernAVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 1588FD6D2C62B7FA002DF1D8 /* RxModernAVPlayer */; };
 /* End PBXBuildFile section */
@@ -21,6 +22,7 @@
 		1545A6492C62431E004B2DD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1545A64E2C62431F004B2DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15682C6E2C62C5AA00627168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15682C702C62C89800627168 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1545A6472C62431E004B2DD7 /* VleerApp.swift */,
 				1545A6492C62431E004B2DD7 /* ContentView.swift */,
 				1545A64D2C62431F004B2DD7 /* Preview Content */,
+				15682C702C62C89800627168 /* Download.swift */,
 			);
 			path = Vleer;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15682C712C62C89800627168 /* Download.swift in Sources */,
 				1545A64A2C62431E004B2DD7 /* ContentView.swift in Sources */,
 				1545A6482C62431E004B2DD7 /* VleerApp.swift in Sources */,
 			);
