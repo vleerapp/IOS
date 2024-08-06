@@ -1,5 +1,5 @@
 import SwiftUI
-import ModernAVPlayer
+import AVFoundation
 import MediaPlayer
 
 struct ContentView: View {
@@ -9,7 +9,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Vleer Music Player")
+            Text("Vleer")
                 .font(.largeTitle)
                 .padding()
             
@@ -140,39 +140,61 @@ struct ContentView: View {
     }
 }
 
-class AudioPlayerManager: ObservableObject {
-    private var player: ModernAVPlayer
+class AudioPlayerManager: NSObject, ObservableObject, AVPlayerItemMetadataOutputPushDelegate {
+    private var player: AVPlayer
     @Published var isPlaying = false
     @Published var currentTime: TimeInterval = 0
     @Published var duration: TimeInterval = 0
     
-    init() {
-        let config = ModernAVPlayerConfiguration()
-        player = ModernAVPlayer(config: config)
+    override init() {
+        guard let url = URL(string: "https://api.vleer.app/stream?id=ZbwEuFb2Zec&quality=lossless") else {
+            fatalError("Invalid URL")
+        }
+        let playerItem = AVPlayerItem(url: url)
+        player = AVPlayer(playerItem: playerItem)
+        super.init()
         setupPlayer()
         setupObservers()
     }
     
     private func setupPlayer() {
-        guard let url = URL(string: "https://api.vleer.app/stream?id=ZbwEuFb2Zec&quality=lossless") else { return }
-        let media = ModernAVPlayerMedia(url: url, type: .stream(isLive: false))
-        player.load(media: media, autostart: false)
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to set audio session category.")
+        }
     }
     
     private func setupObservers() {
-        player.delegate = self
+        player.addPeriodicTimeObserver(forInterval: CMTime(seconds: 1, preferredTimescale: 1), queue: .main) { [weak self] time in
+            self?.currentTime = time.seconds
+        }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)
+    }
+    
+    @objc private func playerItemDidReachEnd() {
+        player.seek(to: .zero)
+        player.pause()
+        isPlaying = false
     }
     
     func play() {
         player.play()
+        isPlaying = true
+        updateNowPlayingInfo()
     }
     
     func pause() {
         player.pause()
+        isPlaying = false
+        updateNowPlayingInfo()
     }
     
     func seek(to time: TimeInterval) {
-        player.seek(position: time)
+        player.seek(to: CMTime(seconds: time, preferredTimescale: 1))
+        updateNowPlayingInfo()
     }
     
     func setupRemoteTransportControls() {
@@ -195,25 +217,16 @@ class AudioPlayerManager: ObservableObject {
             return .success
         }
     }
-}
-
-extension AudioPlayerManager: ModernAVPlayerDelegate {
-    func modernAVPlayer(_ player: ModernAVPlayer, didStateChange state: ModernAVPlayer.State) {
-        DispatchQueue.main.async {
-            self.isPlaying = state == .playing
-        }
-    }
     
-    func modernAVPlayer(_ player: ModernAVPlayer, didCurrentTimeChange currentTime: Double) {
-        DispatchQueue.main.async {
-            self.currentTime = currentTime
-        }
-    }
-    
-    func modernAVPlayer(_ player: ModernAVPlayer, didItemDurationChange itemDuration: Double?) {
-        DispatchQueue.main.async {
-            self.duration = itemDuration ?? 0
-        }
+    private func updateNowPlayingInfo() {
+        var nowPlayingInfo = [String: Any]()
+        nowPlayingInfo[MPMediaItemPropertyTitle] = "Song Title"
+        nowPlayingInfo[MPMediaItemPropertyArtist] = "Artist Name"
+        nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = player.currentTime().seconds
+        nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = player.currentItem?.duration.seconds
+        nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = player.rate
+        
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }
 }
 
