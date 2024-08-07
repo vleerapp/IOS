@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="27.999878px" height="28px" viewBox="0 0 27.999878 28" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M3.5 25.5L3.5 10.3333L14 2.75L24.5 10.3333L24.5 25.5L15.3125 25.5L15.3125 17.9167L12.6875 17.9167L12.6875 25.5L3.5 25.5Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="outline">
+    <path d="M0 0L27.9998 0L27.9998 28L0 28L0 0Z" id="Rectangle" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="Shape-Path">
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#535353" stroke-width="4" />
+      </g>
+    </g>
+  </g>
+</svg>

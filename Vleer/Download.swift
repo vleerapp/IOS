@@ -4,6 +4,7 @@ import SwiftUI
 class Download: ObservableObject {
     @Published var isDownloading = false
     @Published var downloadProgress: Double = 0.0
+    @Published var currentDownloadId: String?
     @Published var downloadedFiles: [URL] = []
     
     private var downloadQueue: [(id: String, quality: String)] = []
@@ -13,6 +14,7 @@ class Download: ObservableObject {
     }
     
     func downloadFile(id: String, quality: String) {
+        currentDownloadId = id
         downloadQueue.append((id: id, quality: quality))
         processQueue()
     }

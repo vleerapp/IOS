@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Library">
+    <path d="M0 0L28 0L28 28L0 28L0 0Z" id="Rectangle" fill="none" fill-rule="evenodd" stroke="none" />
+    <path d="M3.5 24.5L3.5 3.5L5.25 3.5L5.25 24.5L3.5 24.5ZM9.625 24.5L9.625 3.5L11.375 3.5L11.375 24.5L9.625 24.5ZM15.4001 24.5L15.4001 3.5L24.1501 7.875L24.1501 24.5L15.4001 24.5Z" id="Rectangle-3-Union" fill="#535353" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

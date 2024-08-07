@@ -12,6 +12,9 @@
 		1545A64F2C62431F004B2DD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1545A64E2C62431F004B2DD7 /* Preview Assets.xcassets */; };
 		15682C6F2C62C5AA00627168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15682C6E2C62C5AA00627168 /* Assets.xcassets */; };
 		15682C712C62C89800627168 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15682C702C62C89800627168 /* Download.swift */; };
+		1585D65B2C638DE400A88BD3 /* DMMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1585D6542C638DE400A88BD3 /* DMMono-Light.ttf */; };
+		1585D65D2C638DE400A88BD3 /* DMMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1585D6562C638DE400A88BD3 /* DMMono-Medium.ttf */; };
+		1585D65F2C638DE400A88BD3 /* DMMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1585D6582C638DE400A88BD3 /* DMMono-Regular.ttf */; };
 		1588FD6C2C62B7FA002DF1D8 /* ModernAVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 1588FD6B2C62B7FA002DF1D8 /* ModernAVPlayer */; };
 		1588FD6E2C62B7FA002DF1D8 /* RxModernAVPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 1588FD6D2C62B7FA002DF1D8 /* RxModernAVPlayer */; };
 /* End PBXBuildFile section */
@@ -23,6 +26,9 @@
 		1545A64E2C62431F004B2DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15682C6E2C62C5AA00627168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15682C702C62C89800627168 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		1585D6542C638DE400A88BD3 /* DMMono-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMMono-Light.ttf"; sourceTree = "<group>"; };
+		1585D6562C638DE400A88BD3 /* DMMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMMono-Medium.ttf"; sourceTree = "<group>"; };
+		1585D6582C638DE400A88BD3 /* DMMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMMono-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 		1545A63B2C62431E004B2DD7 = {
 			isa = PBXGroup;
 			children = (
+				1585D6592C638DE400A88BD3 /* Fonts */,
 				1545A6462C62431E004B2DD7 /* Vleer */,
 				1545A6452C62431E004B2DD7 /* Products */,
 			);
@@ -74,6 +81,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1585D6592C638DE400A88BD3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1585D6542C638DE400A88BD3 /* DMMono-Light.ttf */,
+				1585D6562C638DE400A88BD3 /* DMMono-Medium.ttf */,
+				1585D6582C638DE400A88BD3 /* DMMono-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,6 +122,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					Fonts,
+				);
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
@@ -139,8 +159,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1585D65D2C638DE400A88BD3 /* DMMono-Medium.ttf in Resources */,
 				15682C6F2C62C5AA00627168 /* Assets.xcassets in Resources */,
 				1545A64F2C62431F004B2DD7 /* Preview Assets.xcassets in Resources */,
+				1585D65B2C638DE400A88BD3 /* DMMono-Light.ttf in Resources */,
+				1585D65F2C638DE400A88BD3 /* DMMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

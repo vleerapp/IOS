@@ -20,5 +20,11 @@
 	<true/>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DMMono-Regular.ttf</string>
+		<string>DMMono-Light.ttf</string>
+		<string>DMMono-Medium.ttf</string>
+	</array>
 </dict>
 </plist>
