@@ -38,7 +38,7 @@ Explore high-quality music with Vleer - a fast, simple, and reliable iOS app, ta
 
 ## 📱 What is Vleer?
 
-Vleer is a lightweight, fast, privacy-first music app, offering a free alternative to Apple Music or Spotify on your iPhone and iPad. It's perfect for those who prefer not to pay for these shitty subscriptions.
+Vleer is a lightweight, fast, privacy-first music app, offering a free alternative to Apple Music or Spotify on your iPhone. It's perfect for those who prefer not to pay for these shitty subscriptions.
 
 🚧 Our iOS version is under active development. We're seeking contributors to help improve the project. If you're interested in iOS development, we welcome your participation.
 
