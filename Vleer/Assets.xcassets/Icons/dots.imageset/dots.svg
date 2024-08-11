@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="dots">
+    <path d="M0 0L36 0L36 36L0 36L0 0Z" id="Rectangle" fill="none" fill-rule="evenodd" stroke="none" />
+    <path d="M11 18.5C11 17.6716 11.6716 17 12.5 17C13.3284 17 14 17.6716 14 18.5C14 19.3284 13.3284 20 12.5 20C11.6716 20 11 19.3284 11 18.5Z" id="Oval" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    <path d="M17 18.5C17 17.6716 17.6716 17 18.5 17C19.3284 17 20 17.6716 20 18.5C20 19.3284 19.3284 20 18.5 20C17.6716 20 17 19.3284 17 18.5Z" id="Oval" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    <path d="M23 18.5C23 17.6716 23.6716 17 24.5 17C25.3284 17 26 17.6716 26 18.5C26 19.3284 25.3284 20 24.5 20C23.6716 20 23 19.3284 23 18.5Z" id="Oval" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

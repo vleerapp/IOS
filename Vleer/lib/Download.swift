@@ -13,10 +13,11 @@ class Download: ObservableObject {
         loadDownloadedFiles()
     }
     
-    func downloadFile(id: String, quality: String) {
+    func downloadFile(id: String, quality: String, query: String = "") {
         currentDownloadId = id
         downloadQueue.append((id: id, quality: quality))
         processQueue()
+        APIService.updateSearchWeight(query: query, selectedId: id)
     }
     
     private func processQueue() {
