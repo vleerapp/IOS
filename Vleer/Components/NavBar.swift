@@ -36,7 +36,7 @@ struct NavBarItem: View {
             Text(text)
                 .font(.custom("DMMono-Medium", size: 10))
         }
-        .foregroundColor(isSelected ? .white : .gray)
+        .foregroundColor(isSelected ? .white : Color(red: 83/255, green: 83/255, blue: 83/255))
         .frame(maxWidth: .infinity)
     }
 }

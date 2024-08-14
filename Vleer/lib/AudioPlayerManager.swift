@@ -8,6 +8,7 @@ class AudioPlayerManager: ObservableObject {
     @Published var currentTime: TimeInterval = 0
     @Published var duration: TimeInterval = 0
     @Published var currentSong: Song?
+    @Published var progress: Double = 0
     
     init() {
         player = AVPlayer()
@@ -26,9 +27,12 @@ class AudioPlayerManager: ObservableObject {
     }
     
     private func setupObservers() {
-        player.addPeriodicTimeObserver(forInterval: CMTime(seconds: 1, preferredTimescale: 1), queue: .main) { [weak self] time in
-            self?.currentTime = time.seconds
-            self?.updateNowPlayingInfo()
+        let interval = CMTime(seconds: 0.5, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+        player.addPeriodicTimeObserver(forInterval: interval, queue: .main) { [weak self] time in
+            guard let self = self else { return }
+            self.currentTime = time.seconds
+            self.progress = self.duration > 0 ? self.currentTime / self.duration : 0
+            self.updateNowPlayingInfo()
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)

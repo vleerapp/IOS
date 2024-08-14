@@ -12,11 +12,11 @@
 		1545A64F2C62431F004B2DD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1545A64E2C62431F004B2DD7 /* Preview Assets.xcassets */; };
 		15682C6F2C62C5AA00627168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15682C6E2C62C5AA00627168 /* Assets.xcassets */; };
 		15682C712C62C89800627168 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15682C702C62C89800627168 /* Download.swift */; };
+		157280A12C6CC2880005124E /* PlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157280A02C6CC2880005124E /* PlayerControls.swift */; };
 		1585D65B2C638DE400A88BD3 /* DMMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1585D6542C638DE400A88BD3 /* DMMono-Light.ttf */; };
 		1585D65D2C638DE400A88BD3 /* DMMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1585D6562C638DE400A88BD3 /* DMMono-Medium.ttf */; };
 		1585D65F2C638DE400A88BD3 /* DMMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1585D6582C638DE400A88BD3 /* DMMono-Regular.ttf */; };
 		1585D67C2C639F1500A88BD3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585D67B2C639F1500A88BD3 /* Models.swift */; };
-		1585D6802C639F3A00A88BD3 /* PlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585D67F2C639F3A00A88BD3 /* PlayerControls.swift */; };
 		1585D6822C639F4800A88BD3 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585D6812C639F4800A88BD3 /* NavBar.swift */; };
 		1585D6842C639F5B00A88BD3 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585D6832C639F5B00A88BD3 /* AudioPlayerManager.swift */; };
 		1585D6872C63A04700A88BD3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585D6862C63A04700A88BD3 /* Home.swift */; };
@@ -37,11 +37,11 @@
 		1545A64E2C62431F004B2DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15682C6E2C62C5AA00627168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15682C702C62C89800627168 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		157280A02C6CC2880005124E /* PlayerControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerControls.swift; sourceTree = "<group>"; };
 		1585D6542C638DE400A88BD3 /* DMMono-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMMono-Light.ttf"; sourceTree = "<group>"; };
 		1585D6562C638DE400A88BD3 /* DMMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMMono-Medium.ttf"; sourceTree = "<group>"; };
 		1585D6582C638DE400A88BD3 /* DMMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMMono-Regular.ttf"; sourceTree = "<group>"; };
 		1585D67B2C639F1500A88BD3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		1585D67F2C639F3A00A88BD3 /* PlayerControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControls.swift; sourceTree = "<group>"; };
 		1585D6812C639F4800A88BD3 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		1585D6832C639F5B00A88BD3 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		1585D6862C63A04700A88BD3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				1585D67B2C639F1500A88BD3 /* Models.swift */,
-				1585D67F2C639F3A00A88BD3 /* PlayerControls.swift */,
+				157280A02C6CC2880005124E /* PlayerControls.swift */,
 				1585D6812C639F4800A88BD3 /* NavBar.swift */,
 			);
 			path = Components;
@@ -237,12 +237,12 @@
 				15682C712C62C89800627168 /* Download.swift in Sources */,
 				1585D6912C63A50100A88BD3 /* KeyboardAdaptive.swift in Sources */,
 				1585D6952C63EAD100A88BD3 /* APIService.swift in Sources */,
+				157280A12C6CC2880005124E /* PlayerControls.swift in Sources */,
 				1545A64A2C62431E004B2DD7 /* ContentView.swift in Sources */,
 				1585D68B2C63A05400A88BD3 /* Settings.swift in Sources */,
 				1545A6482C62431E004B2DD7 /* VleerApp.swift in Sources */,
 				1585D67C2C639F1500A88BD3 /* Models.swift in Sources */,
 				1585D6842C639F5B00A88BD3 /* AudioPlayerManager.swift in Sources */,
-				1585D6802C639F3A00A88BD3 /* PlayerControls.swift in Sources */,
 				1585D6892C63A04E00A88BD3 /* Songs.swift in Sources */,
 				1585D68F2C63A06100A88BD3 /* Search.swift in Sources */,
 			);

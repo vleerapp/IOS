@@ -28,12 +28,14 @@ struct SearchView: View {
             
             ScrollView {
                 LazyVStack(spacing: 0) {
+                    Color.clear.frame(height: 14) // Top padding
+                    
                     ForEach(searchViewModel.searchResults) { song in
-                        SongRow(song: song, audioPlayer: audioPlayer, download: download, query: searchText)
-                            .padding(.horizontal, 20)
+                        SongRowWithSpacing(song: song, audioPlayer: audioPlayer, download: download, query: searchText)
                     }
+                    
+                    Color.clear.frame(height: 6) // Bottom padding (14 - 8 = 6)
                 }
-                .padding(.bottom, 120)
                 .background(Color(red: 0.07, green: 0.07, blue: 0.07))
             }
         }
@@ -42,6 +44,55 @@ struct SearchView: View {
             searchViewModel.searchQuery = newValue
             searchViewModel.search()
         }
+    }
+}
+
+// MARK: - SongRowWithSpacing
+
+struct SongRowWithSpacing: View {
+    let song: Song
+    @ObservedObject var audioPlayer: AudioPlayerManager
+    @ObservedObject var download: Download
+    let query: String
+    
+    var body: some View {
+        VStack(spacing: 0) {
+            SongRow(song: song, audioPlayer: audioPlayer, download: download, query: query)
+                .padding(.horizontal, 20)
+            
+            Color.clear.frame(height: 8) // 8px spacing
+        }
+    }
+}
+
+// MARK: - Custom Spacing Modifier
+
+struct CustomSpacingModifier: ViewModifier {
+    let spacing: CGFloat
+    
+    func body(content: Content) -> some View {
+        content
+            .padding(.bottom, spacing)
+            .frame(maxWidth: .infinity)
+            .overlay(
+                GeometryReader { geometry in
+                    Color.clear.preference(key: ViewOffsetKey.self,
+                                           value: geometry.frame(in: .named("scroll")).maxY)
+                }
+            )
+    }
+}
+
+struct ViewOffsetKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+
+extension View {
+    func customSpacing(_ spacing: CGFloat) -> some View {
+        self.modifier(CustomSpacingModifier(spacing: spacing))
     }
 }
 
