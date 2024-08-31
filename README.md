@@ -30,10 +30,12 @@ Explore high-quality music with Vleer - a fast, simple, and reliable iOS app, ta
 
 <details>
   <summary><kbd>Star History</kbd></summary>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=vleerapp/ios&theme=dark&type=Date">
-    <img width="100%" src="https://api.star-history.com/svg?repos=vleerapp/ios&type=Date">
-  </picture>
+  <a href="https://star-history.com/#vleerapp/ios&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=vleerapp/ios&theme=dark&type=Date">
+      <img width="100%" src="https://api.star-history.com/svg?repos=vleerapp/ios&type=Date">
+    </picture>
+  </a>
 </details>
 
 ## 📱 What is Vleer?
