@@ -95,4 +95,4 @@ git clone https://github.com/vleerapp/ios.git
 
 ## 📝 License
 
-Vleer for iOS is licensed under the Creative Commons Attribution-Noncommercial-Share Alike. See the [LICENSE file](./LICENCE) for more information.
+Vleer for iOS is licensed under the GPL-3. See the [LICENSE file](./LICENCE) for more information.
